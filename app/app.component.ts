@@ -7,7 +7,7 @@ import { Animal } from './animal.model';
   template: `
     <div class="container">
       <h1>Animal House</h1>
-      <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+      <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
       <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
       <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()">></edit-animal>
     </div>
@@ -16,7 +16,7 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
 
-  selectedAnimal = null;
+  selectedAnimal = Animal;
 
   masterAnimalList: Animal[] = [
     new Animal('Arctic Fox','Moon', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool shade', 'Loud noises'),
