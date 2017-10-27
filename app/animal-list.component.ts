@@ -9,11 +9,13 @@ template:
 <select (change)="onChange($event.target.value)">
   <option value="allAnimals" selected="selected">View All Animals</option>
   <option value="youngAnimals">Animals Under 2 Years</option>
-  <option value="matureAnimals">Animals Over 2 Years</option>
+  <option value="matureAnimals">Animals 2 Years and Older</option>
 </select>
-<ul *ngFor='let currentAnimal of childAnimalList | age:filterByAge'>
-  <li><h3>{{currentAnimal.species}}</h3><h4>{{currentAnimal.name}}</h4></li>
+<ul>
+  <li *ngFor='let currentAnimal of childAnimalList | age:filterByAge'><h3>{{currentAnimal.species}}</h3>
+  <h4>{{currentAnimal.name}}</h4>
   <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+  </li>
 </ul>
 <hr>
 `
@@ -29,7 +31,11 @@ export class AnimalListComponent {
     this.clickSender.emit(animalToEdit);
     }
 
-  onChange(optionsFromMenu) {
-    this.filterByAge = optionsFromMenu;
+  onChange(animalAge) {
+    this.filterByAge = animalAge;
+  }
+
+  toggleAge(clickedAnimal: Animal, setAge: number) {
+    clickedAnimal.age = setAge;
   }
 }

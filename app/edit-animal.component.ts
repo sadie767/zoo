@@ -6,11 +6,11 @@ import { Animal } from './animal.model';
   template: `
   <hr>
   <div>
-    <h3>Edit Animal's Name, Age, or Number of Caretakers</h3>
     <div *ngIf='childSelectedAnimal'>
-    <h4>{{childSelectedAnimal.name}}</h4>
-    <h4>{{childSelectedAnimal.age}}</h4>
-    <h4>{{childSelectedAnimal.caretakers}}</h4>
+      <h3>Edit Animal's Name, Age, or Number of Caretakers</h3>
+      <h4>{{childSelectedAnimal.name}}</h4>
+      <h4>{{childSelectedAnimal.age}}</h4>
+      <h4>{{childSelectedAnimal.caretakers}}</h4>
     </div>
     <div>
     <label>Enter New Name:</label>
