@@ -1,17 +1,18 @@
 # _Zoo_
 
-#### _An independent project implementing HTML, CSS, JavaScript, and Angular2 10.27.2017_
+#### _An independent project implementing HTML, CSS, JavaScript, and Angular2_
+_10.27.2017_
 
 #### By _Rebecca McIntosh_
 
 ## Description
 
-_Build an app that will allow users to enter animal information, view animals by age group, and edit animals._
+_Build an app for a zoo that will allow users to enter animal information, view animals by age group, and edit animals._
 
 ## Specs
 
 *_Users should be able to log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike._
-*_Users should be able to view a list of animals I have been entered._
+*_Users should be able to view a list of animals that have been entered._
 *_Users should be able to view all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older)._
 *_Users should be able to click an animal to edit its name, age or caretakers._
 
