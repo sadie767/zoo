@@ -11,10 +11,12 @@ _Build an app for a zoo that will allow users to enter animal information, view 
 
 ## Specs
 
-*_Users should be able to log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike._
-*_Users should be able to view a list of animals that have been entered._
-*_Users should be able to view all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older)._
-*_Users should be able to click an animal to edit its name, age or caretakers._
+_Users should be able to log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike._
+_Users should be able to view a list of animals that have been entered._
+_Users should be able to view all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older)._
+_Users should be able to click an animal to edit its name, age or caretakers._
+_*In the future site will include a database_
+
 
 ## Setup/Installation Requirements
 
