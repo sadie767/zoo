@@ -34,5 +34,5 @@ export class AnimalListComponent {
   onChange(animalAge) {
     this.filterByAge = animalAge;
   }
-  
+
 }
