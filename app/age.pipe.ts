@@ -18,7 +18,7 @@ export class AgePipe implements PipeTransform {
           }
         }
         return output;
-      } else if (desiredAge === "oldAnimals") {
+      } else if (desiredAge === "matureAnimals") {
         for (var i = 0; i < input.length; i++) {
           if (input[i].age >= 2) {
           output.push(input[i]);

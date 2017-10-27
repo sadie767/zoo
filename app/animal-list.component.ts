@@ -34,8 +34,5 @@ export class AnimalListComponent {
   onChange(animalAge) {
     this.filterByAge = animalAge;
   }
-
-  toggleAge(clickedAnimal: Animal, setAge: number) {
-    clickedAnimal.age = setAge;
-  }
+  
 }
