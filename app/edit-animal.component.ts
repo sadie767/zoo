@@ -7,16 +7,23 @@ import { Animal } from './animal.model';
   <hr>
   <div *ngIf='childSelectedAnimal'>
     <h3>Edit Animal's Name, Age, or Number of Caretakers</h3>
-    <h4>{{childSelectedAnimal.name}}</h4>
-    <h4>{{childSelectedAnimal.age}}</h4>
-    <h4>{{childSelectedAnimal.caretakers}}</h4>
+    <p>{{childSelectedAnimal.name}}</p>
+    <p>{{childSelectedAnimal.age}}</p>
+    <p>{{childSelectedAnimal.caretakers}}</p>
     <label>Enter New Name:</label>
+    <br>
     <input [(ngModel)]="childSelectedAnimal.name">
+    <br>
     <label>Enter New Age:</label>
+    <br>
     <input [(ngModel)]="childSelectedAnimal.age">
+    <br>
     <label>Enter Number of Caretakers:</label>
+    <br>
     <input [(ngModel)]="childSelectedAnimal.caretakers">
+    <br>
   <button (click)="doneButtonClicked()">Edit</button>
+  <br><br>
 </div>
   `
 })
