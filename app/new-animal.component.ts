@@ -23,17 +23,17 @@ import { Animal } from './animal.model';
    <br>
    <label>Diet:</label>
    <select #newDiet (change)="$event.target.value">
-      <option value="carni">Carnivore</option>
-      <option value="omni">Ominivore</option>
-      <option value="herbi">Herbivore</option>
+      <option value="Carnivore">Carnivore</option>
+      <option value="Omnivore">Ominivore</option>
+      <option value="Herbivore">Herbivore</option>
     </select>
      <label>Location:</label>
      <select #newLocation (change)="$event.target.value">
-        <option value="grass">Grasslands</option>
-        <option value="polar">Polar Ice Caps</option>
-        <option value="underwater">Underwater</option>
-        <option value="forest">Forest</option>
-        <option value="tropical">Tropical Rainforest</option>
+        <option value="Grasslands">Grasslands</option>
+        <option value="Polar Ice Caps">Polar Ice Caps</option>
+        <option value="Underwater Ocean">Underwater Ocean</option>
+        <option value="Forest">Forest</option>
+        <option value="Tropical Rain Forest">Tropical Rainforest</option>
       </select>
      <label>Number of Caretakers:</label>
      <select #newCaretakers (change)="$event.target.value">
@@ -50,9 +50,9 @@ import { Animal } from './animal.model';
       </select>
      <label>Sex:</label>
      <select #newSex (change)="$event.target.value">
-        <option value="female">Female</option>
-        <option value="male">Male</option>
-        <option value="undetermined">Undetermined</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Undetermined">Undetermined</option>
       </select>
    <br>
    <br>

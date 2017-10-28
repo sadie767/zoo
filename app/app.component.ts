@@ -10,7 +10,7 @@ import { Animal } from './animal.model';
         <h1 id="large">Animal House</h1>
         <br><br><br>
         <h1>Our Family Members:</h1>
-        <img src="img/elephant.jpg">
+        <img src="img/' + images[Math.floor(Math.random() * images.length)] + '">
       </div>
       <br>
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
@@ -39,5 +39,5 @@ export class AppComponent {
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
   }
-
+    // images: string[] = [elephant.jpg, baby.jpg, elephant2.jpg, crocodile.jpg, giraffe.jpg, hippo.jpg];
 }
