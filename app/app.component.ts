@@ -10,7 +10,8 @@ import { Animal } from './animal.model';
         <h1 id="large">Animal House</h1>
         <br><br><br>
         <h1>Our Family Members:</h1>
-        <img src="img/' + images[Math.floor(Math.random() * images.length)] + '">
+        <!--<img src="img/' + images[Math.floor(Math.random() * images.length)] + '">-->
+        <img src="img/crocodile.jpg">
       </div>
       <br>
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
